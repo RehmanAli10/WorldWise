@@ -1,7 +1,10 @@
 import styles from "./CountryList.module.css";
 import CountryItem from "./CountryItem";
+import { useCities } from "../contexts/CitiesContext";
 
-function CountryList({ cities, isLoader }) {
+function CountryList() {
+  const { cities, isLoading } = useCities();
+
   const uniqueCountries = cities.reduce(function (arr, city) {
     if (!arr.map((currCity) => currCity.country).includes(city.country)) {
       return [...arr, { country: city.country, emoji: city.emoji }];
@@ -10,12 +13,10 @@ function CountryList({ cities, isLoader }) {
     }
   }, []);
 
-  console.log(uniqueCountries);
-
   return (
     <ul className={styles.countryList}>
       {uniqueCountries.map((country) => (
-        <CountryItem country={country} key={country.id} isLoader={isLoader} />
+        <CountryItem country={country} key={country.id} isLoading={isLoading} />
       ))}
     </ul>
   );

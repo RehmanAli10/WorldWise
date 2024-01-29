@@ -8,11 +8,14 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "server": "json-server --watch data/cities.json --port 8000 --delay 5000 "
+    "server": "json-server --watch data/cities.json --port 7000 --delay 2000 "
   },
   "dependencies": {
+    "leaflet": "^1.9.4",
     "react": "^18.2.0",
+    "react-datepicker": "^5.0.0",
     "react-dom": "^18.2.0",
+    "react-leaflet": "^4.2.1",
     "react-router-dom": "^6.21.3"
   },
   "devDependencies": {
