@@ -1,6 +1,7 @@
-import styles from "./CountryList.module.css";
-import CountryItem from "./CountryItem";
 import { useCities } from "../contexts/CitiesContext";
+import CountryItem from "./CountryItem";
+
+import styles from "./CountryList.module.css";
 
 function CountryList() {
   const { cities, isLoading } = useCities();
@@ -15,8 +16,8 @@ function CountryList() {
 
   return (
     <ul className={styles.countryList}>
-      {uniqueCountries.map((country) => (
-        <CountryItem country={country} key={country.id} isLoading={isLoading} />
+      {uniqueCountries.map((country, index) => (
+        <CountryItem country={country} key={index} isLoading={isLoading} />
       ))}
     </ul>
   );

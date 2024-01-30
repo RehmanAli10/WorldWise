@@ -10,3 +10,6 @@
   align-content: start;
   gap: 1.6rem;
 }
+::-webkit-scrollbar {
+  width: 0;
+}
