@@ -8,7 +8,7 @@ import styles from "./Login.module.css";
 
 function Login() {
   // PRE-FILLED FOR DEVELOPMENT PURPOSES
-  const [email, setEmail] = useState("jack@example.com");
+  const [email, setEmail] = useState("rehman@example.com");
   const [password, setPassword] = useState("qwerty");
 
   const navigate = useNavigate();
