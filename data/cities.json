@@ -35,6 +35,18 @@
         "lng": "64.81933593750001"
       },
       "id": 3
+    },
+    {
+      "cityName": "Shorkot",
+      "country": "Pakistan",
+      "emoji": "🇵🇰",
+      "date": "2024-02-07T02:30:31.582Z",
+      "notes": "beautful eating place",
+      "position": {
+        "lat": "30.883369321692268",
+        "lng": "72.09228515625001"
+      },
+      "id": 4
     }
   ]
 }
